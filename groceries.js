@@ -109,6 +109,13 @@ var products = [
 		price: 12.00
 	},
 	{
+		name: "Veggie Burger Patty",
+		vegetarian: true,
+		glutenFree: true,
+		organic:true,
+		price: 7.99
+	},
+	{
 		name: "beef",
 		vegetarian: false,
 		glutenFree: true,
@@ -128,7 +135,10 @@ var products = [
 		glutenFree: true,
 		organic:true,
 		price: 5.00
-	}
+	},
+
+
+
 ];
 	
 
