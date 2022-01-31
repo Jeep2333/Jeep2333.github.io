@@ -42,15 +42,19 @@
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
    <p></p>
-	 <button id="addCart" type="button" class="button" onclick="selectedItems()">
+	 <button id="addCart" type="button" class="button" onclick="selectedItems()"; onclick="addCart()"  >
+
 		Add selected items to cart.
 	</button>
+    <button class="button" onclick="openInfo(event, 'Cart')">See the cart</button>
+
 </div>
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
+
 </div>
 
 <script src="groceries.js"></script>
