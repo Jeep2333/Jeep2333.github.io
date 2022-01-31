@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<!--This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<title>Eleven Store</title>
 </head>
@@ -20,11 +20,11 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-  Diet Preference --- Vegetarian, GlutenFree, Organic
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="VegetarianO">Vegetarian, and Organic Food</option>
-	<option value="VegetarianN">Vegetarian, and Non-Organic Food</option>
+  <p>Diet Preference --- Vegetarian, GlutenFree, Organic</p>
+	<select class = "diet-Select" id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	  <option value=""></option>
+	  <option value="VegetarianO">Vegetarian, and Organic Food</option>
+	  <option value="VegetarianN">Vegetarian, and Non-Organic Food</option>
     <option value="GlutenFreeO">GlutenFree, and Organic Food</option>
     <option value="GlutenFreeN">GlutenFree, and Non-Organic Food</option>
     <option value="Both">Both, and Organic Food</option>
@@ -32,7 +32,8 @@
     <option value="NoneO">None, and Organic Food</option>
     <option value="NoneN">None, and Non-Organic Food</option>
 	</select>
-	<button class="tablinks" onclick="openInfo(event, 'Products')">See the Products</button>
+  <p></p>
+	<button class="button" onclick="openInfo(event, 'Products')">See the Products</button>
 </div>
 
 <div id="Products" class="tabcontent">
@@ -40,7 +41,8 @@
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+   <p></p>
+	 <button id="addCart" type="button" class="button" onclick="selectedItems()">
 		Add selected items to cart.
 	</button>
 </div>
@@ -53,6 +55,10 @@
 
 <script src="groceries.js"></script>
 <script src="main.js"></script>
+
+<h3>
+  <footer class="sig">Site designed by group 11</footer>
+</h3>
 
 </body>
 </html>

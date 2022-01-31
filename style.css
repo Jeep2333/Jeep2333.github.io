@@ -35,3 +35,26 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+.sig{
+  color: rgb(13, 172, 224);
+  text-align: right;
+  font-size: small;
+  position:relative;
+}
+
+.button{
+  background-color: rgb(13, 172, 224);	
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1{
+  text-align: center;
+	font-size: 30px;
+	color: rgb(13, 172, 224);
+}
