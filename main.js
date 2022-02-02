@@ -58,8 +58,13 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		s2.appendChild(document.createElement("br"));
+		if(s2==null){
+			print("no product for this option now")
+		}
 	}
+
+
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
@@ -84,10 +89,12 @@ function selectedItems(){
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
+
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	alert("Your item had been add");
 		
 }

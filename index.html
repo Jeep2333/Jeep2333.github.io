@@ -4,6 +4,7 @@
 	<!--This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<title>Eleven Store</title>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
 	  <option value="VegetarianN">Vegetarian, and Non-Organic Food</option>
     <option value="GlutenFreeO">GlutenFree, and Organic Food</option>
     <option value="GlutenFreeN">GlutenFree, and Non-Organic Food</option>
-    <option value="Both">Both, and Organic Food</option>
+    <option value="BothO">Both, and Organic Food</option>
     <option value="BothN">Both, and Non-Organic Food</option>
     <option value="NoneO">None, and Organic Food</option>
     <option value="NoneN">None, and Non-Organic Food</option>
@@ -42,15 +43,19 @@
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
    <p></p>
-	 <button id="addCart" type="button" class="button" onclick="selectedItems()">
+	 <button id="addCart" type="button" class="button" onclick="selectedItems()"; onclick="addCart()"  >
+
 		Add selected items to cart.
 	</button>
+    <button class="button" onclick="openInfo(event, 'Cart')">See the cart</button>
+
 </div>
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
+
 </div>
 
 <script src="groceries.js"></script>
